@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="embedded-zookeeper" />
+        <module name="airapi-client-sdk" />
+        <module name="InterfaceService" />
+        <module name="airapi-platform" />
+        <module name="airapi-common" />
+        <module name="tradeService" />
+        <module name="airapi-gateway" />
+        <module name="userService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="airapi-client-sdk" target="1.8" />
+      <module name="airapi-common" target="1.8" />
+      <module name="airapi-gateway" target="1.8" />
+      <module name="airapi-platform" target="1.8" />
+      <module name="API-platform-dubbo" target="1.8" />
+      <module name="APIPlatform" target="1.8" />
+      <module name="embedded-zookeeper" target="1.8" />
+      <module name="InterfaceService" target="1.8" />
+      <module name="tradeService" target="1.8" />
+      <module name="userService" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-platform-dubbo" options="" />
+      <module name="APIPlatform" options="-parameters" />
+      <module name="InterfaceService" options="-parameters" />
+      <module name="airapi-client-sdk" options="-parameters" />
+      <module name="airapi-common" options="-parameters" />
+      <module name="airapi-gateway" options="-parameters" />
+      <module name="airapi-platform" options="-parameters" />
+      <module name="tradeService" options="-parameters" />
+      <module name="userService" options="-parameters" />
+    </option>
+  </component>
+</project>

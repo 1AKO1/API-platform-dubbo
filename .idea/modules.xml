@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/API-platform-dubbo.iml" filepath="$PROJECT_DIR$/.idea/API-platform-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfaceService/InterfaceService.iml" filepath="$PROJECT_DIR$/InterfaceService/InterfaceService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/airapi-client-sdk/airapi-client-sdk.iml" filepath="$PROJECT_DIR$/airapi-client-sdk/airapi-client-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/airapi-common/airapi-common.iml" filepath="$PROJECT_DIR$/airapi-common/airapi-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/airapi-gateway/airapi-gateway.iml" filepath="$PROJECT_DIR$/airapi-gateway/airapi-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/airapi-platform/airapi-platform.iml" filepath="$PROJECT_DIR$/airapi-platform/airapi-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/embedded-zookeeper/embedded-zookeeper.iml" filepath="$PROJECT_DIR$/embedded-zookeeper/embedded-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tradeService/tradeService.iml" filepath="$PROJECT_DIR$/tradeService/tradeService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userService/userService.iml" filepath="$PROJECT_DIR$/userService/userService.iml" />
+    </modules>
+  </component>
+</project>

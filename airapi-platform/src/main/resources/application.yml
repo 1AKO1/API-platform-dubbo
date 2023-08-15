@@ -1,0 +1,9 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
+airapi:
+  client:
+    access-key: "bagamao"
+    secret-key: "bagamao"

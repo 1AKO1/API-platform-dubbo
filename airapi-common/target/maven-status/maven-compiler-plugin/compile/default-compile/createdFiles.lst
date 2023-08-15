@@ -1,0 +1,17 @@
+com\aira\apicommon\model\entity\Post.class
+com\aira\apicommon\model\entity\InterfaceInfo.class
+com\aira\apicommon\model\enums\UserRoleEnum.class
+com\aira\apicommon\model\vo\UserVO.class
+com\aira\apicommon\model\entity\User.class
+com\aira\apicommon\model\enums\InterfaceInfoStatusENum.class
+com\aira\apicommon\model\vo\PostVO.class
+com\aira\apicommon\model\vo\PostVO$1.class
+com\aira\apicommon\model\entity\PostFavour.class
+com\aira\apicommon\model\enums\FileUploadBizEnum.class
+com\aira\apicommon\model\vo\LoginUserVO.class
+com\aira\apicommon\service\InnerUserInterfaceInfoService.class
+com\aira\apicommon\model\entity\PostThumb.class
+com\aira\apicommon\service\InnerUserService.class
+com\aira\apicommon\model\entity\UserInterfaceInfo.class
+com\aira\apicommon\service\InnerInterfaceInfoService.class
+com\aira\apicommon\model\vo\InterfaceInfoVO.class

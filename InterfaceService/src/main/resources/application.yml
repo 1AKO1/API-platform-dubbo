@@ -1,0 +1,44 @@
+server:
+  port: 8002
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://116.204.107.240:3306/api_platform
+    username: root
+    password: 123456
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+dubbo:
+  application:
+    name: interface-info-service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: zk-registry
+    address: zookeeper://127.0.0.1:2181
+  config-center:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181
+  tracing:
+    enabled: true # 默认为false
+    sampling:
+      probability: 0.5 # 采样率, 默认是 0.1
+    propagation:
+      type: W3C # 传播器类型：W3C/B3 默认是W3C
+    tracing-exporter:
+      zipkin-config:
+        endpoint: http://172.31.18.40:9411/api/v2/spans
+        connect-timeout: 3s # 建立连接超时时间, 默认为1s
+        read-timeout: 10s # 传递数据超时时间, 默认为10s
+
+# tracing信息输出到logging
+logging:
+  level:
+    root: info
+  pattern:
+    console: '[%d{dd/MM/yy HH:mm:ss:SSS z}] %t %5p %c{2} [%X{traceId:-}, %X{spanId:-}]: %m%n'

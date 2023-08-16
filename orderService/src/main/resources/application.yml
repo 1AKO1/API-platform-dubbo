@@ -1,0 +1,78 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: order-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://116.204.107.240:3306/api_platform
+    username: root
+    password: 123456
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+dubbo:
+  application:
+    name: order-service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
+  config-center:
+    address: nacos://127.0.0.1:8848
+  metadata-report:
+    address: nacos://127.0.0.1:8848
+#  tracing:
+#    enabled: true # 默认为false
+#
+#    sampling:
+#      probability: 0.5 # 采样率, 默认是 0.1
+#    propagation:
+#      type: W3C # 传播器类型：W3C/B3 默认是W3C
+#    tracing-exporter:
+##      zipkin-config:
+##        endpoint: http://172.31.18.40:9411/api/v2/spans
+##        connect-timeout: 3s # 建立连接超时时间, 默认为1s
+##        read-timeout: 10s # 传递数据超时时间, 默认为10s
+#      otlp-config:
+#        endpoint: http://172.31.18.40:4317
+#        timeout: 10s # default is 10s
+#        compression-method: none # none/gzip The method used to compress payloads, default is "none"
+#        headers: # customized added headers, default is empty
+#          auth: admin
+
+#seata:
+#  enabled: true
+#  application-id: ${spring.application.name}
+#  tx-service-group: my_test_tx_group
+#  enable-auto-data-source-proxy: true #仅AT与XA模式需要为true,开启后会自动代理数据源
+#  data-source-proxy-mode: AT #可选AT&XA
+#  config:
+#    type: nacos
+#    nacos:
+#      #namespace: 如果配置创建在非默认namespace,请在此处填写namespace的id
+#      serverAddr: 127.0.0.1:8848
+#      group: SEATA_GROUP
+#      username: "nacos"
+#      password: "nacos"
+#      data-id: seata.properties
+#  registry:
+#    type: nacos
+#    nacos:
+#      application: seata-server
+#      server-addr: 127.0.0.1:8848
+#      group: SEATA_GROUP
+#      #namespace: 如果配置创建在非默认namespace,请在此处填写namespace的id
+#      username: "nacos"
+#      password: "nacos"
+
+# tracing信息输出到logging
+logging:
+  level:
+    root: info
+  pattern:
+    console: '[%d{dd/MM/yy HH:mm:ss:SSS z}] %t %5p %c{2} [%X{traceId:-}, %X{spanId:-}]: %m%n'

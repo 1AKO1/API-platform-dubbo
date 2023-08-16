@@ -56,29 +56,29 @@
             <version>${dubbo.version}</version>
         </dependency>
         <!--  nacos  -->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.nacos</groupId>-->
-<!--            <artifactId>nacos-client</artifactId>-->
-<!--            <version>2.1.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>2.1.0</version>
+        </dependency>
         <!-- registry dependency -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>
-            <version>${dubbo.version}</version>
-            <type>pom</type>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-reload4j</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-tracing-otel-zipkin-starter</artifactId>
-            <version>3.2.4</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dubbo</groupId>-->
+<!--            <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>-->
+<!--            <version>${dubbo.version}</version>-->
+<!--            <type>pom</type>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>slf4j-reload4j</artifactId>-->
+<!--                    <groupId>org.slf4j</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dubbo</groupId>-->
+<!--            <artifactId>dubbo-spring-boot-tracing-otel-zipkin-starter</artifactId>-->
+<!--            <version>3.2.4</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 

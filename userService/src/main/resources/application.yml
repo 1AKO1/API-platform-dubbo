@@ -24,6 +24,8 @@ dubbo:
     address: nacos://127.0.0.1:8848
   metadata-report:
     address: nacos://127.0.0.1:8848
+  consumer:
+    timeout: 3000
 #  tracing:
 #    enabled: true # 默认为false
 #

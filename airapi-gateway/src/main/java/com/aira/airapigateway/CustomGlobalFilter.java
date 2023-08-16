@@ -103,7 +103,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
         // 5. 判断接口是否存在，状态是否正常，看哪个SQL需求小，先做轻逻辑
         InterfaceInfo interfaceInfo = null;
         try{
-            interfaceInfo = innerInterfaceInfoService.getInterfaceInfo(url, method, queryParams.toString());
+//            interfaceInfo = innerInterfaceInfoService.getInterfaceInfo();
         }catch (Exception e){
             log.error("getInterface error, " + e);
         }

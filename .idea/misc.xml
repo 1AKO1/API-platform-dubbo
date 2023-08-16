@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/InterfaceService/pom.xml" />
         <option value="$PROJECT_DIR$/tradeService/pom.xml" />
         <option value="$PROJECT_DIR$/embedded-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/orderService/pom.xml" />
       </list>
     </option>
   </component>

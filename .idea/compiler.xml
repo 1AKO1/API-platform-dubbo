@@ -11,6 +11,7 @@
         <module name="airapi-client-sdk" />
         <module name="InterfaceService" />
         <module name="airapi-platform" />
+        <module name="orderService" />
         <module name="airapi-common" />
         <module name="tradeService" />
         <module name="airapi-gateway" />
@@ -26,6 +27,7 @@
       <module name="APIPlatform" target="1.8" />
       <module name="embedded-zookeeper" target="1.8" />
       <module name="InterfaceService" target="1.8" />
+      <module name="orderService" target="1.8" />
       <module name="tradeService" target="1.8" />
       <module name="userService" target="1.8" />
     </bytecodeTargetLevel>
@@ -39,6 +41,7 @@
       <module name="airapi-common" options="-parameters" />
       <module name="airapi-gateway" options="-parameters" />
       <module name="airapi-platform" options="-parameters" />
+      <module name="orderService" options="-parameters" />
       <module name="tradeService" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/airapi-gateway/airapi-gateway.iml" filepath="$PROJECT_DIR$/airapi-gateway/airapi-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/airapi-platform/airapi-platform.iml" filepath="$PROJECT_DIR$/airapi-platform/airapi-platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/embedded-zookeeper/embedded-zookeeper.iml" filepath="$PROJECT_DIR$/embedded-zookeeper/embedded-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderService/orderService.iml" filepath="$PROJECT_DIR$/orderService/orderService.iml" />
       <module fileurl="file://$PROJECT_DIR$/tradeService/tradeService.iml" filepath="$PROJECT_DIR$/tradeService/tradeService.iml" />
       <module fileurl="file://$PROJECT_DIR$/userService/userService.iml" filepath="$PROJECT_DIR$/userService/userService.iml" />
     </modules>

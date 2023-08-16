@@ -18,23 +18,29 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    id: zk-registry
-    address: zookeeper://127.0.0.1:2181
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
   config-center:
-    address: zookeeper://127.0.0.1:2181
+    address: nacos://127.0.0.1:8848
   metadata-report:
-    address: zookeeper://127.0.0.1:2181
-  tracing:
-    enabled: true # 默认为false
-    sampling:
-      probability: 0.5 # 采样率, 默认是 0.1
-    propagation:
-      type: W3C # 传播器类型：W3C/B3 默认是W3C
-    tracing-exporter:
-      zipkin-config:
-        endpoint: http://172.31.18.40:9411/api/v2/spans
-        connect-timeout: 3s # 建立连接超时时间, 默认为1s
-        read-timeout: 10s # 传递数据超时时间, 默认为10s
+    address: nacos://127.0.0.1:8848
+#  tracing:
+#    enabled: true # 默认为false
+#    sampling:
+#      probability: 0.5 # 采样率, 默认是 0.1
+#    propagation:
+#      type: W3C # 传播器类型：W3C/B3 默认是W3C
+#    tracing-exporter:
+##      zipkin-config:
+##        endpoint: http://172.31.18.40:9411/api/v2/spans
+##        connect-timeout: 3s # 建立连接超时时间, 默认为1s
+##        read-timeout: 10s # 传递数据超时时间, 默认为10s
+#      otlp-config:
+#        endpoint: http://172.31.18.40:4317
+#        timeout: 10s # default is 10s
+#        compression-method: none # none/gzip The method used to compress payloads, default is "none"
+#        headers: # customized added headers, default is empty
+#          auth: admin
 
 # tracing信息输出到logging
 logging:
